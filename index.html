@@ -26,23 +26,43 @@
             <p class="product__label">Фасовка</p>
 
             <div class="product__package-list">
-              <button type="button" class="product__package is-active">
+              <button
+                type="button"
+                class="product__package is-active"
+                data-package="100"
+              >
                 100 г
               </button>
 
-              <button type="button" class="product__package">500 г</button>
+              <button type="button" class="product__package" data-package="500">
+                500 г
+              </button>
 
-              <button type="button" class="product__package">1000 г</button>
+              <button
+                type="button"
+                class="product__package"
+                data-package="1000"
+              >
+                1000 г
+              </button>
 
-              <button type="button" class="product__package">5000 г</button>
+              <button
+                type="button"
+                class="product__package"
+                data-package="5000"
+              >
+                5000 г
+              </button>
             </div>
           </div>
 
-          <p class="product__article">Арт. <span>01306</span></p>
+          <p class="product__article">
+            Арт. <span id="product-article">01306</span>
+          </p>
 
           <div class="product__price">
-            <del>349,20 ₽</del>
-            <strong>326,40 ₽</strong>
+            <del id="product-old-price">349,20 ₽</del>
+            <strong id="product-price">326,40 ₽</strong>
           </div>
 
           <button type="button" class="product__cart">В корзину</button>
