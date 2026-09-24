@@ -1,13 +1,64 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>teaboom-product-card</title>
+    <meta
+      name="description"
+      content="Ананасовый улун — ароматизированный китайский чай"
+    />
+    <title>Ананасовый улун — Teaboom</title>
   </head>
+
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+    <main class="page">
+      <article class="product">
+        <div class="product__image">
+          <img src="/product.webp" alt="Ананасовый улун" />
+        </div>
+
+        <div class="product__content">
+          <p class="product__category">Ароматизированный</p>
+
+          <h1 class="product__title">Ананасовый улун</h1>
+
+          <div class="product__packages">
+            <p class="product__label">Фасовка</p>
+
+            <div class="product__package-list">
+              <button type="button" class="product__package is-active">
+                100 г
+              </button>
+
+              <button type="button" class="product__package">500 г</button>
+
+              <button type="button" class="product__package">1000 г</button>
+
+              <button type="button" class="product__package">5000 г</button>
+            </div>
+          </div>
+
+          <p class="product__article">Арт. <span>01306</span></p>
+
+          <div class="product__price">
+            <del>349,20 ₽</del>
+            <strong>326,40 ₽</strong>
+          </div>
+
+          <button type="button" class="product__cart">В корзину</button>
+
+          <section class="product__description">
+            <h2>О товаре</h2>
+
+            <p>
+              Состав: китайский бирюзовый чай, цукаты, натуральные ароматические
+              масла.
+            </p>
+
+            <p>Светлый Фуцзяньский улун с ароматом ананаса.</p>
+          </section>
+        </div>
+      </article>
+    </main>
   </body>
 </html>

@@ -1,1 +1,1 @@
-console.log('teaboom-product-card');
+import './style.css';
