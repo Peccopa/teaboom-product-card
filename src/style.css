@@ -3,8 +3,8 @@
 }
 
 html {
-  font-family: Arial, sans-serif;
-  color: #2f2a26;
+  font-family: 'Montserrat', sans-serif;
+  color: #302c29;
   background: #fff;
 }
 
@@ -48,14 +48,17 @@ button {
 }
 
 .product__category {
-  margin: 0 0 16px;
-  color: #8b8179;
-  font-size: 14px;
+  margin: 0 0 14px;
+  color: #8a7564;
+  font-size: 13px;
   line-height: 1.4;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
 .product__title {
   margin: 0 0 40px;
+  color: #302c29;
   font-size: 42px;
   font-weight: 500;
   line-height: 1.15;
@@ -74,23 +77,27 @@ button {
 }
 
 .product__package {
-  min-width: 80px;
+  min-width: 82px;
   padding: 12px 18px;
-  border: 1px solid #d8d0c9;
-  border-radius: 4px;
-  color: #2f2a26;
+  border: 1px solid #d9d1ca;
+  border-radius: 2px;
+  color: #4b4540;
   background: #fff;
   cursor: pointer;
+  transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease,
+    color 0.2s ease;
 }
 
 .product__package:hover {
-  border-color: #6b5a4d;
+  border-color: #8a7564;
 }
 
 .product__package.is-active {
-  border-color: #4e4036;
+  border-color: #5d4d41;
   color: #fff;
-  background: #4e4036;
+  background: #5d4d41;
 }
 
 .product__article {
@@ -102,28 +109,30 @@ button {
 .product__price {
   display: flex;
   align-items: baseline;
-  gap: 14px;
+  gap: 12px;
   margin-bottom: 28px;
 }
 
 .product__price del {
-  color: #9b938d;
-  font-size: 18px;
+  color: #aaa19a;
+  font-size: 17px;
 }
 
 .product__price strong {
-  font-size: 32px;
+  color: #302c29;
+  font-size: 30px;
   font-weight: 600;
 }
 
 .product__cart {
   width: 100%;
-  padding: 16px 24px;
-  border: 1px solid #4e4036;
-  border-radius: 4px;
+  padding: 17px 24px;
+  border: 1px solid #5d4d41;
+  border-radius: 2px;
   color: #fff;
-  background: #4e4036;
-  font-size: 17px;
+  background: #5d4d41;
+  font-size: 16px;
+  font-weight: 500;
   cursor: pointer;
   transition:
     background-color 0.2s ease,
@@ -131,7 +140,7 @@ button {
 }
 
 .product__cart:hover {
-  color: #4e4036;
+  color: #5d4d41;
   background: #fff;
 }
 
@@ -156,6 +165,12 @@ button {
 
 .product__description p:last-child {
   margin-bottom: 0;
+}
+
+.product__package:focus-visible,
+.product__cart:focus-visible {
+  outline: 2px solid #8a7564;
+  outline-offset: 3px;
 }
 
 @media (max-width: 900px) {
