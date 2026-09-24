@@ -12,9 +12,11 @@ packageButtons.forEach((button) => {
 
     packageButtons.forEach((item) => {
       item.classList.remove('is-active');
+      item.setAttribute('aria-pressed', 'false');
     });
 
     button.classList.add('is-active');
+    button.setAttribute('aria-pressed', 'true');
 
     article.textContent = selectedPackage.article;
     price.textContent = selectedPackage.price;

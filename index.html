@@ -20,7 +20,7 @@
     <main class="page">
       <article class="product">
         <div class="product__image">
-          <img src="/product.webp" alt="Ананасовый улун" />
+          <img src="/product.webp" alt="Ананасовый улун" loading="eager" />
         </div>
 
         <div class="product__content">
@@ -36,11 +36,17 @@
                 type="button"
                 class="product__package is-active"
                 data-package="100"
+                aria-pressed="true"
               >
                 100 г
               </button>
 
-              <button type="button" class="product__package" data-package="500">
+              <button
+                type="button"
+                class="product__package"
+                data-package="500"
+                aria-pressed="false"
+              >
                 500 г
               </button>
 
@@ -48,6 +54,7 @@
                 type="button"
                 class="product__package"
                 data-package="1000"
+                aria-pressed="false"
               >
                 1000 г
               </button>
@@ -56,6 +63,7 @@
                 type="button"
                 class="product__package"
                 data-package="5000"
+                aria-pressed="false"
               >
                 5000 г
               </button>
@@ -71,7 +79,13 @@
             <strong id="product-price">326,40 ₽</strong>
           </div>
 
-          <button type="button" class="product__cart">В корзину</button>
+          <button
+            type="button"
+            class="product__cart"
+            aria-label="Добавить Ананасовый улун в корзину"
+          >
+            В корзину
+          </button>
 
           <section class="product__description">
             <h2>О товаре</h2>
