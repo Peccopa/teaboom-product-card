@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, sans-serif;
+  color: #2f2a26;
+  background: #fff;
+}
+
+body {
+  margin: 0;
+}
+
+button {
+  font: inherit;
+}
+
+.page {
+  min-height: 100vh;
+  padding: 64px 32px;
+}
+
+.product {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(400px, 560px);
+  gap: 80px;
+  width: min(1200px, 100%);
+  margin: 0 auto;
+}
+
+.product__image {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  min-width: 0;
+}
+
+.product__image img {
+  display: block;
+  width: min(100%, 560px);
+  height: auto;
+  object-fit: contain;
+}
+
+.product__content {
+  padding-top: 24px;
+}
+
+.product__category {
+  margin: 0 0 16px;
+  color: #8b8179;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.product__title {
+  margin: 0 0 40px;
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 1.15;
+}
+
+.product__label {
+  margin: 0 0 12px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.product__package-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.product__package {
+  min-width: 80px;
+  padding: 12px 18px;
+  border: 1px solid #d8d0c9;
+  border-radius: 4px;
+  color: #2f2a26;
+  background: #fff;
+  cursor: pointer;
+}
+
+.product__package:hover {
+  border-color: #6b5a4d;
+}
+
+.product__package.is-active {
+  border-color: #4e4036;
+  color: #fff;
+  background: #4e4036;
+}
+
+.product__article {
+  margin: 28px 0 20px;
+  color: #8b8179;
+  font-size: 14px;
+}
+
+.product__price {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  margin-bottom: 28px;
+}
+
+.product__price del {
+  color: #9b938d;
+  font-size: 18px;
+}
+
+.product__price strong {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.product__cart {
+  width: 100%;
+  padding: 16px 24px;
+  border: 1px solid #4e4036;
+  border-radius: 4px;
+  color: #fff;
+  background: #4e4036;
+  font-size: 17px;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.product__cart:hover {
+  color: #4e4036;
+  background: #fff;
+}
+
+.product__description {
+  margin-top: 48px;
+  padding-top: 32px;
+  border-top: 1px solid #e5dfda;
+}
+
+.product__description h2 {
+  margin: 0 0 16px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.product__description p {
+  margin: 0 0 12px;
+  color: #625b55;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.product__description p:last-child {
+  margin-bottom: 0;
+}
